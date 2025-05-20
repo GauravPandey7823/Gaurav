@@ -1,14 +1,16 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Your Name | Portfolio</title>
-  <link
+  <title>My Portfolio</title>
+ <!--<link
     href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&family=Roboto&display=swap"
     rel="stylesheet" />
+    -->
+    
+    
     
   <style>
     /* Reset & base */
@@ -308,7 +310,24 @@ color: #444;
 font-size: 1rem;
 line-height: 1.5;
 }
+form {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 2rem;
+  background: linear-gradient(to right, #f8fafc, #e2e8f0);
+  border-radius: 1rem;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
 
+input,
+textarea {
+  font-family: 'Segoe UI', sans-serif;
+  font-size: 1rem;
+  padding: 0.75rem 1rem;
+  border: 2px solid #cbd5e0;
+  border-radius: 0.5rem;
+  transition: border-color 0.3s, box-shadow 0.
+}
     
   </style>
 </head>
@@ -330,15 +349,23 @@ line-height: 1.5;
   <main>
     <section id="welcome" tabindex="0" aria-label="Welcome Section">
       <h2>Hello! I'm Gaurav Pandey</h2>
-      <img src="gaurav.jpeg"
+      <img src="image.png"
         alt="Portrait of Your Name" class="profile-photo" />
-      <div class="video-wrapper" aria-label="Video introduction">
+     <!-- <div class="video-wrapper" aria-label="Video introduction">
         <iframe
           src="gaurav.jpeg"
           title="Video Introduction"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
           allowfullscreen></iframe>
       </div>
+      -->
+      <div class="video-wrapper" aria-label="Video introduction">
+      <iframe
+        src="https://www.youtube.com/embed/dQw4w9WgXcQ" <!-- replace with your video link -->
+        title="Gaurav's Introduction"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen></iframe>
+    </div>
     </section>
 
     <section id="about" tabindex="0" aria-label="About Me">
@@ -349,7 +376,7 @@ line-height: 1.5;
       <p><strong>Languages Known:</strong> English, Marathi, Hindi</p>
     </section>
 
-    <section id="achievements" tabindex="0" aria-label="Achievements">
+   <!-- <section id="achievements" tabindex="0" aria-label="Achievements">
       <h2>Achievements</h2>
       <ul>
         <li>🏅 paraticiapat in bis in gulcometer</li>
@@ -357,6 +384,18 @@ line-height: 1.5;
         <li>🚀 Published research paper on AI optimization in renowned journal</li>
       </ul>
     </section>
+    -->
+    <section id="achievements" tabindex="0" aria-label="Achievements">
+  <h2>Achievements</h2>
+  <ul id="achievementList">
+    
+        <li>🏅 paraticiapat in bis in gulcometer</li>
+        <li>💻 Developed and deployed a full-stack web app for local charity</li>
+        <li>🚀 Published research paper on AI optimization in renowned journal</li>
+  </ul>
+  
+</section>
+
 
     <section id="goals" tabindex="0" aria-label="Future Goals">
       <h2>Future Goals</h2>
@@ -365,50 +404,64 @@ line-height: 1.5;
         improve lives globally. I aim to contribute to open source and mentor upcoming developers.
       </p>
     </section>
-    <section id="hobbies" tabindex="0" aria-label="Personal Side">
-        <h2>Personal Side</h2>
+    
+
+    <h2>Personal Side</h2>
       
-        <div class="personal-cards">
-          <div class="info-box">
-            <h3>Hobbies</h3>
-            <p>I love hiking and exploring nature for peace and creativity. Photography helps me capture life’s moments beautifully.</p>
-          </div>
-      
-          <div class="info-box">
-            <h3>Role Models</h3>
-            <p>Elon Musk for his vision and perseverance, and Malala Yousafzai for her courage and dedication to education.</p>
-          </div>
-      
-          <div class="info-box">
-            <h3>Favourite Books</h3>
-            <p>"Clean Code" for coding best practices, and "Sapiens" for its fascinating insight into humanity’s history.</p>
-          </div>
-      
-          <div class="info-box">
-            <h3>Favourite Websites</h3>
-            <p>GitHub for collaboration, Medium for diverse ideas, and Stack Overflow for community-driven tech help.</p>
-          </div>
-      
-          <div class="info-box">
-            <h3>Favourite Startups</h3>
-            <p>Stripe for innovation in payments, and Coursera for making education accessible globally.</p>
-          </div>
-      
-          <div class="info-box">
-            <h3>Volunteering Experience</h3>
-            <p>I volunteered as a coding tutor for underprivileged children aiming to bridge the digital divide.</p>
-          </div>
-        </div>
-      </section>
-      
+    <div class="personal-cards">
+      <div class="info-box">
+        <h3>Hobbies</h3>
+        <p>I love hiking and exploring nature for peace and creativity. Photography helps me capture life’s moments beautifully.</p>
+      </div>
+  
+      <div class="info-box">
+        <h3>Role Models</h3>
+        <p>Elon Musk for his vision and perseverance, and Malala Yousafzai for her courage and dedication to education.</p>
+      </div>
+  
+      <div class="info-box">
+        <h3>Favourite Books</h3>
+        <p>"Clean Code" for coding best practices, and "Sapiens" for its fascinating insight into humanity’s history.</p>
+      </div>
+  
+      <div class="info-box">
+        <h3>Favourite Websites</h3>
+        <p>GitHub for collaboration, Medium for diverse ideas, and Stack Overflow for community-driven tech help.</p>
+      </div>
+  
+      <div class="info-box">
+        <h3>Favourite Startups</h3>
+        <p>Stripe for innovation in payments, and Coursera for making education accessible globally.</p>
+      </div>
+  
+      <div class="info-box">
+        <h3>Volunteering Experience</h3>
+        <p>I volunteered as a coding tutor for underprivileged children aiming to bridge the digital divide.</p>
+      </div>
+    </div>
+  </section>
+   <!-- Contact Section -->
+   <section id="contact" class="max-w-4xl mx-auto my-12 p-6 bg-white rounded-lg shadow-md" data-aos="fade-up">
+    <h2 class="text-2xl font-bold text-center mb-4">Contact Me</h2>
+    <p>📞 <a href="tel:917823862097" class="text-blue-600 underline">+917823862097</a></p>
+    <p>💬 <a href="https://wa.me/917823862097" class="text-green-600 underline">Chat on WhatsApp : 917823862097</a></p>
+    <p>✉️ <a href="mailto:gauravrampandey09@gmail.com" class="text-red-600 underline">gauravrampandey09@gmail.com</a></p>
+    <p>📍 <iframe src="https://www.google.com/maps?q=Vasai,Maharashtra&output=embed" width="100%" height="200" style="border:0;" allowfullscreen=""></iframe></p>
+    <p class="mt-4">🌐 <a href="https://github.com/GauravPandey7823" class="underline">GitHub</a> |
+       <a href="" class="underline">LinkedIn</a> |
+       <a href="" class="underline">Instagram</a></p>
+    <form action="https://formspree.io/f/yourformid" method="POST" class="mt-6 flex flex-col gap-4">
+      <input type="text" name="name" placeholder="Your Name" required class="border p-2 rounded-md" />
+      <input type="email" name="_replyto" placeholder="Your Email" required class="border p-2 rounded-md" />
+      <textarea name="message" placeholder="Your Message" required class="border p-2 rounded-md"></textarea>
+      <button type="submit" class="bg-blue-600 text-white px-4 py-2 rounded-md hover:bg-blue-800">Send</button>
+    </form>
+  </section>
+  </main>
   <footer>
-    <p>Contact me at: <a href="mailto:your.email@example.com" aria-label="Email address">your.email@example.com</a></p>
+    <p>Contact me at: <a href="gauravrampandey09@example.com" aria-label="Email address">gauravrampandey09@example.com</a></p>
     <p>© 2024 Your Name. All rights reserved.</p>
-  </footer> 
-      
+  </footer>
 </body>
 
-</html>
-
-
-
+</html> 
