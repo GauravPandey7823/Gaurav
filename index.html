@@ -437,15 +437,51 @@ textarea {
     
     
     <h1>Welcome to My Portfolio</h1>
-    <nav role="navigation" aria-label="Primary Navigation">
-      <ul>
-        <li><a href="#welcome">Welcome</a></li>
-        <li><a href="#about">About Me</a></li>
-        <li><a href="#achievements">Achievements</a></li>
-        <li><a href="#goals">Future Goals</a></li>
-        <li><a href="#hobbies">Personal Side</a></li>
-      </ul>
-    </nav>
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Responsive Navbar</title>
+      <script src="https://cdn.tailwindcss.com"></script>
+    </head>
+    <body class="bg-gray-100">
+    
+      <nav class="bg-blue-600 text-white p-4" role="navigation" aria-label="Primary Navigation">
+        <div class="container mx-auto flex justify-between items-center">
+          <!-- Branding / Logo -->
+          <div class="text-lg font-bold">MySite</div>
+    
+          <!-- Hamburger Icon (visible on small screens) -->
+          <button id="menu-btn" class="block md:hidden focus:outline-none">
+            <svg class="w-6 h-6 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+              <path d="M4 6h16M4 12h16M4 18h16"/>
+            </svg>
+          </button>
+    
+          <!-- Menu Links -->
+          <ul id="menu" class="hidden flex-col md:flex md:flex-row md:items-center md:space-x-6 mt-4 md:mt-0">
+            <li><a href="#welcome" class="block py-2 md:py-0 hover:underline">Welcome</a></li>
+            <li><a href="#about" class="block py-2 md:py-0 hover:underline">About Me</a></li>
+            <li><a href="#achievements" class="block py-2 md:py-0 hover:underline">Achievements</a></li>
+            <li><a href="#goals" class="block py-2 md:py-0 hover:underline">Future Goals</a></li>
+            <li><a href="#hobbies" class="block py-2 md:py-0 hover:underline">Personal Side</a></li>
+          </ul>
+        </div>
+      </nav>
+    
+      <script>
+        const menuBtn = document.getElementById('menu-btn');
+        const menu = document.getElementById('menu');
+    
+        menuBtn.addEventListener('click', () => {
+          menu.classList.toggle('hidden');
+        });
+      </script>
+    
+    </body>
+    </html>
+    
   </header>
 
   <main>
@@ -466,7 +502,7 @@ textarea {
       <div class="video-wrapper" aria-label="Video introduction">
         <!-- replace with your video link -->
       <iframe
-        src="https://www.youtube.com/embed/dQw4w9WgXcQ" 
+        src="gaurav-video.mp4" 
         title="Gaurav's Introduction"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
         allowfullscreen></iframe>
@@ -591,7 +627,7 @@ textarea {
   </section>
   </main>
   <footer>
-    <p>Contact me at: <a href="gauravrampandey09@example.com" aria-label="Email address">gauravrampandey09@example.com</a></p>
+    <p>Contact me at: <a href="gauravrampandey09@gmail.com" aria-label="Email address">gauravrampandey09@gmail.com</a></p>
     <p>© 2024 Your Name. All rights reserved.</p>
   </footer>
 
