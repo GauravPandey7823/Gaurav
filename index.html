@@ -447,38 +447,42 @@ textarea {
     </head>
     <body class="bg-gray-100">
     
-      <nav class="bg-blue-600 text-white p-4" role="navigation" aria-label="Primary Navigation">
-        <div class="container mx-auto flex justify-between items-center">
-          <!-- Branding / Logo -->
-          <div class="text-lg font-bold">MySite</div>
-    
-          <!-- Hamburger Icon (visible on small screens) -->
-          <button id="menu-btn" class="block md:hidden focus:outline-none">
-            <svg class="w-6 h-6 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-              <path d="M4 6h16M4 12h16M4 18h16"/>
-            </svg>
-          </button>
-    
-          <!-- Menu Links -->
-          <ul id="menu" class="hidden flex-col md:flex md:flex-row md:items-center md:space-x-6 mt-4 md:mt-0">
-            <li><a href="#welcome" class="block py-2 md:py-0 hover:underline">Welcome</a></li>
-            <li><a href="#about" class="block py-2 md:py-0 hover:underline">About Me</a></li>
-            <li><a href="#achievements" class="block py-2 md:py-0 hover:underline">Achievements</a></li>
-            <li><a href="#goals" class="block py-2 md:py-0 hover:underline">Future Goals</a></li>
-            <li><a href="#hobbies" class="block py-2 md:py-0 hover:underline">Personal Side</a></li>
-          </ul>
-        </div>
-      </nav>
-    
-      <script>
-        const menuBtn = document.getElementById('menu-btn');
-        const menu = document.getElementById('menu');
-    
-        menuBtn.addEventListener('click', () => {
-          menu.classList.toggle('hidden');
-        });
-      </script>
-    
+        <header class="bg-gradient-to-r from-purple-600 to-blue-600 text-white p-4 shadow-md sticky top-0 z-50">
+            <div class="container mx-auto flex justify-between items-center">
+              <h1 class="text-xl font-bold">Gaurav Pandey</h1>
+              <button id="hamburgerBtn" class="md:hidden text-3xl focus:outline-none">
+                ☰
+              </button>
+              <ul id="navLinks" class="hidden md:flex space-x-6 font-medium">
+                <li><a href="#welcome" class="hover:underline">Welcome</a></li>
+                <li><a href="#about" class="hover:underline">About Me</a></li>
+                <li><a href="#achievements" class="hover:underline">Achievements</a></li>
+                <li><a href="#goals" class="hover:underline">Future Goals</a></li>
+                <li><a href="#hobbies" class="hover:underline">Personal Side</a></li>
+                <li><a href="#contact" class="hover:underline">Contact</a></li>
+              </ul>
+            </div>
+          
+            <!-- Mobile Menu -->
+            <ul id="mobileMenu" class="md:hidden hidden flex-col bg-blue-700 text-white space-y-2 px-4 py-4 mt-2 rounded-lg">
+              <li><a href="#welcome" class="block hover:underline">Welcome</a></li>
+              <li><a href="#about" class="block hover:underline">About Me</a></li>
+              <li><a href="#achievements" class="block hover:underline">Achievements</a></li>
+              <li><a href="#goals" class="block hover:underline">Future Goals</a></li>
+              <li><a href="#hobbies" class="block hover:underline">Personal Side</a></li>
+              <li><a href="#contact" class="block hover:underline">Contact</a></li>
+            </ul>
+          </header>  
+        
+         
+        <script>
+            const hamburgerBtn = document.getElementById("hamburgerBtn");
+            const mobileMenu = document.getElementById("mobileMenu");
+          
+            hamburgerBtn.addEventListener("click", () => {
+              mobileMenu.classList.toggle("hidden");
+            });
+          </script>
     </body>
     </html>
     
@@ -666,7 +670,7 @@ textarea {
     };
   </script>
    
-  <!-- huangahcwwbw-->
+  <!-- huangahcwwbw
   <nav role="navigation" aria-label="Primary Navigation">
     <div class="nav-container">
       <button class="hamburger" id="hamburgerBtn" aria-label="Menu">&#9776;</button>
@@ -679,6 +683,7 @@ textarea {
       </ul>
     </div>
   </nav>
+  -->
   <!--add javascript-->
   <script>
     document.getElementById('hamburgerBtn').addEventListener('click', () => {
@@ -707,7 +712,12 @@ textarea {
     });
   </script>
 
-  
+  <script>
+    menuBtn.addEventListener('click', () => {
+  menu.classList.toggle('hidden');
+});
+
+  </script>
 </body>
 
 </html> 
